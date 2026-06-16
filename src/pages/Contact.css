@@ -1,0 +1,214 @@
+.contact-page {
+  font-family: Arial, sans-serif;
+}
+
+/* Banner */
+.contact-banner {
+  height: 260px;
+  background-image: url("https://images.unsplash.com/photo-1523966211575-eb4a01e7dd51?auto=format&fit=crop&w=1400&q=60");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.contact-banner-overlay {
+  height: 100%;
+  background: rgba(28, 34, 42, 0.75);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+}
+
+.contact-banner-overlay h1 {
+  font-size: 44px;
+  margin: 0;
+}
+
+.contact-banner-overlay p {
+  font-size: 18px;
+  max-width: 780px;
+  margin-top: 10px;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1150px;
+  margin: auto;
+}
+
+/* Top Contact Cards */
+.contact-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  padding: 60px 0;
+}
+
+.contact-card {
+  background: white;
+  border-radius: 12px;
+  padding: 22px;
+  box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.08);
+  border-top: 4px solid #0b5ed7;
+}
+
+.contact-card h3 {
+  margin-top: 0;
+  color: #0885d3;
+}
+
+.contact-card p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.highlight {
+  font-weight: bold;
+}
+
+/* India Offices */
+.india-offices {
+  background: #f4f8ff;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.india-offices h2 {
+  margin: 0;
+  font-size: 32px;
+  color: #9851a3;
+}
+
+.subtext {
+  margin-top: 8px;
+  color: #555;
+}
+
+.office-grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.office-box {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+.office-box h4 {
+  margin-top: 0;
+  color: #0885d3;
+}
+
+.office-box p {
+  margin-bottom: 0;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Leave message section */
+.leave-message {
+  padding: 60px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.message-left h2,
+.message-right h2 {
+  margin-top: 0;
+  color: #0885d3;
+}
+
+.contact-mini {
+  background: #f7fbff;
+  border-left: 4px solid #0b5ed7;
+  padding: 14px 16px;
+  margin-top: 14px;
+  border-radius: 10px;
+}
+
+.contact-mini h4 {
+  margin: 0 0 8px 0;
+  color: #0885d3;
+}
+
+.contact-mini p {
+  margin: 6px 0;
+  color: #333;
+}
+
+/* Contact Form */
+.contact-form {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+.contact-form textarea {
+  height: 110px;
+  resize: none;
+}
+
+.contact-form button {
+  padding: 14px;
+  background: #0b5ed7;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Responsive */
+@media (max-width: 1000px) {
+  .contact-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .office-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .leave-message {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .office-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-banner-overlay h1 {
+    font-size: 32px;
+  }
+}

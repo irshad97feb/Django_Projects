@@ -1,0 +1,215 @@
+.service-template-page {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 1150px;
+  margin: auto;
+}
+
+/* ✅ Banner */
+.st-banner {
+  height: 260px;
+  background-size: cover;
+  background-position: center;
+}
+
+.st-banner-overlay {
+  height: 100%;
+  background: rgba(28, 34, 42, 0.75);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 0 18px;
+}
+
+.st-banner-overlay h1 {
+  margin: 0;
+  font-size: 42px;
+}
+
+.st-banner-overlay p {
+  margin-top: 10px;
+  font-size: 18px;
+  max-width: 800px;
+}
+
+/* ✅ Intro */
+.st-intro {
+  padding: 60px 0 35px;
+  text-align: center;
+}
+
+.st-intro h2 {
+  color: #9851a3;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.st-intro p {
+  max-width: 950px;
+  margin: auto;
+  line-height: 1.7;
+  color: #333;
+  font-size: 16px;
+}
+
+/* Titles */
+.st-section-title {
+  text-align: center;
+  color: #9851a3;
+  font-size: 32px;
+  margin-bottom: 6px;
+}
+
+.st-section-subtitle {
+  text-align: center;
+  color: #444;
+  margin-bottom: 35px;
+}
+
+/* ✅ Offerings */
+.st-offerings {
+  background: #f4f8ff;
+  padding: 60px 0;
+}
+
+.st-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.st-card {
+  background: white;
+  border-radius: 12px;
+  padding: 22px;
+  box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.08);
+  border-top: 4px solid #0b5ed7;
+  transition: 0.3s;
+}
+
+.st-card:hover {
+  transform: translateY(-5px);
+}
+
+.st-card h3 {
+  margin-top: 0;
+  color: #0885d3;
+}
+
+.st-card p {
+  margin-bottom: 0;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* ✅ Why + CTA */
+.st-why {
+  padding: 60px 0;
+}
+
+.st-why-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  align-items: start;
+}
+
+.st-why-box h2 {
+  color: #9851a3;
+  margin-top: 0;
+}
+
+.st-why-box ul {
+  padding-left: 0;
+  list-style: none;
+  margin-top: 10px;
+}
+
+.st-why-box li {
+  padding: 8px 0;
+  color: #333;
+}
+
+/* CTA */
+.st-cta {
+  background: rgba(28, 34, 42, 0.75);
+  color: white;
+  border-radius: 14px;
+  padding: 25px;
+}
+
+.st-cta h3 {
+  margin-top: 0;
+}
+
+.st-cta p {
+  line-height: 1.6;
+}
+
+.st-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 12px 20px;
+  background: white;
+  color: #0b5ed7;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+/* ✅ Process */
+.st-process {
+  padding: 60px 0;
+  background: white;
+}
+
+.st-process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-top: 25px;
+}
+
+.st-process-card {
+  background: #f7fbff;
+  padding: 18px;
+  border-radius: 12px;
+  border-left: 5px solid #0b5ed7;
+}
+
+.st-process-card h3 {
+  margin-top: 0;
+  color: #0885d3;
+  font-size: 16px;
+}
+
+.st-process-card p {
+  margin-bottom: 0;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ✅ Responsive */
+@media (max-width: 1000px) {
+  .st-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .st-why-box {
+    grid-template-columns: 1fr;
+  }
+
+  .st-process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .st-banner-overlay h1 {
+    font-size: 32px;
+  }
+}

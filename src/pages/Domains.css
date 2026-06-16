@@ -1,0 +1,154 @@
+.domains-page {
+  font-family: Arial, sans-serif;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1150px;
+  margin: auto;
+}
+
+/* Banner */
+.domains-banner {
+  height: 260px;
+  background-image: url("https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1400&q=60");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.domains-banner-overlay {
+  height: 100%;
+  background: rgba(28, 34, 42, 0.75);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+}
+
+.domains-banner-overlay h1 {
+  font-size: 44px;
+  margin: 0;
+}
+
+.domains-banner-overlay p {
+  margin-top: 10px;
+  font-size: 18px;
+  max-width: 800px;
+}
+
+/* Intro */
+.domains-intro {
+  padding: 60px 0 20px;
+  text-align: center;
+}
+
+.domains-intro h2 {
+  color: #9851a3;
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.domains-intro p {
+  color: #333;
+  line-height: 1.7;
+  font-size: 16px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Grid Section */
+.domains-grid-section {
+  padding: 40px 0 70px;
+  background: #f4f8ff;
+}
+
+.domains-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.domain-card {
+  background: white;
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.08);
+  border-top: 4px solid #0b5ed7;
+  transition: 0.3s;
+}
+
+.domain-card:hover {
+  transform: translateY(-6px);
+}
+
+.domain-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.domain-card h3 {
+  color: #0885d3;
+  margin: 10px 0;
+}
+
+.domain-card p {
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* CTA */
+.domains-cta {
+  background: rgba(28, 34, 42, 0.75);
+  color: white;
+  text-align: center;
+  padding: 60px 0;
+}
+
+.domains-cta h2 {
+  margin: 0;
+  font-size: 30px;
+}
+
+.domains-cta p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.cta-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: white;
+  color: #0b5ed7;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.cta-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .domains-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .domains-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .domains-banner-overlay h1 {
+    font-size: 32px;
+  }
+}

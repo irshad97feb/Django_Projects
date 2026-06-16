@@ -1,0 +1,80 @@
+.container {
+  width: 90%;
+  max-width: 1150px;
+  margin: auto;
+}
+
+.service-banner {
+  height: 260px;
+  background-image: url("https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1400&q=60");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.service-banner-overlay {
+  height: 100%;
+  background: rgba(11, 94, 215, 0.78);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.service-banner-overlay h1 {
+  margin: 0;
+  font-size: 34px;
+  max-width: 900px;
+}
+
+.service-content {
+  padding: 60px 0;
+}
+
+.service-content h2 {
+  color: #0b5ed7;
+  margin-bottom: 10px;
+}
+
+.service-content p {
+  line-height: 1.7;
+  font-size: 16px;
+  color: #333;
+}
+
+.service-box {
+  margin-top: 30px;
+  background: #f4f8ff;
+  padding: 20px;
+  border-radius: 12px;
+  border-left: 5px solid #0b5ed7;
+}
+
+.service-box h3 {
+  margin-top: 0;
+  color: #0b5ed7;
+}
+
+.service-box ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.service-box li {
+  padding: 7px 0;
+  color: #333;
+}
+
+.service-btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 22px;
+  background: #0b5ed7;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}

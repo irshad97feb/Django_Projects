@@ -1,0 +1,370 @@
+.home-page {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 1150px;
+  margin: auto;
+}
+
+/* ✅ HERO */
+.hero {
+  height: 520px;
+  background-image: url("https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1400&q=60");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-overlay {
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  color: white;
+  text-align: left;
+}
+
+.hero-content h1 {
+  font-size: 46px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.hero-btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 13px 25px;
+  background: #0b5ed7;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+/* ✅ SECTION HEADINGS */
+.section-title {
+  text-align: center;
+  color: #0b5ed7;
+  font-size: 34px;
+  margin-bottom: 5px;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #444;
+  margin-bottom: 35px;
+}
+
+/* ✅ SERVICES */
+.services-section {
+  padding-top: 0px 0;
+  background: white;
+  /* margin-top: 0px auto 0; */
+  padding: 20px 22px;
+}
+
+.home-page .section-title {
+  color: #18262f;   /* ✅ change this color */
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.service-card {
+  background: #f7fbff;
+  padding: 25px;
+  border-radius: 12px;
+  border-top: 4px solid #0b5ed7;
+  box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.08);
+}
+
+.service-card h3 {
+  color: #0b5ed7;
+  margin-top: 0;
+}
+
+.service-card p {
+  line-height: 1.7;
+  color: #333;
+}
+
+.view-services-btn {
+  display: block;
+  width: fit-content;
+  margin: 35px auto 0;
+  padding: 12px 22px;
+  background: #18262f;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+/* ✅ TALK TO EXPERT */
+.expert-section {
+  padding: 50px 0;
+  background: #2b3749;
+}
+
+.expert-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  gap: 20px;
+}
+
+.expert-box h2 {
+  margin: 0;
+}
+
+.expert-btn {
+  background: white;
+  color: #242f40;
+  padding: 12px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ✅ ABOUT SECTION */
+.about-home {
+  padding: 70px 0;
+  background: white;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: center;
+}
+
+.about-text h3 {
+  color: #85a1cb;
+  font-size: 28px;
+  margin-top: 0;
+}
+
+.about-text p {
+  line-height: 1.7;
+  color: #333;
+}
+
+.read-more-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 20px;
+  background: #18262f;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 14px;
+  box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* ✅ SCIENCE SECTION */
+/* ✅ Science Section */
+.science-section {
+  background: #f4f8ff;
+  padding: 70px 0;
+}
+
+.science-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 40px;
+}
+
+.science-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.science-card:hover {
+  transform: translateY(-6px);
+}
+
+.science-card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+
+.science-card h3 {
+  color: #0b5ed7;
+  margin: 18px 18px 10px;
+  font-size: 20px;
+}
+
+.science-card p {
+  margin: 0 18px 22px;
+  color: #333;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+/* ✅ Responsive */
+/* @media (max-width: 950px) {
+  .science-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .science-card img {
+    height: 170px;
+  }
+} */
+
+
+/* ✅ Responsive */
+@media (max-width: 950px) {
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .science-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .expert-box {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+
+/* ✅ HERO SLIDER */
+.hero-slider {
+  height: 520px;
+}
+
+.slide {
+  height: 520px;
+  background-size: cover;
+  background-position: center;
+}
+
+.slide-overlay {
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+}
+
+.slide-content {
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  color: white;
+  text-align: left;
+}
+
+.slide-content h1 {
+  font-size: 46px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.hero-btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 13px 25px;
+  background: #0b5ed7;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+/* ✅ Swiper dots style */
+.swiper-pagination-bullet {
+  background: white !important;
+  opacity: 0.7;
+}
+
+.swiper-pagination-bullet-active {
+  background: #4b5769 !important;
+  opacity: 1;
+}
+
+
+
+/* ✅ Our Services Cards like screenshot */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 30px;
+}
+
+.service-card-dark {
+  background: linear-gradient(180deg, #053c5c, #041f3a);
+  padding: 32px;
+  border-radius: 14px;
+  min-height: 270px;
+  box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.12);
+  transition: 0.3s;
+}
+
+.service-card-dark:hover {
+  transform: translateY(-6px);
+}
+
+.service-icon {
+  font-size: 38px;
+  margin-bottom: 18px;
+}
+
+.service-card-dark h3 {
+  font-size: 22px;
+  margin: 0 0 15px 0;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.service-card-dark p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0;
+}
+
+/* ✅ Responsive */
+@media (max-width: 950px) {
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.service-icon img {
+  width: 200px;
+  height: 150px;
+}

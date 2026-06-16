@@ -1,0 +1,215 @@
+.salesforce-page {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 1150px;
+  margin: auto;
+}
+
+/* ✅ Banner */
+.salesforce-banner {
+  height: 260px;
+  background-image: url("https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1400&q=60");
+  background-size: cover;
+  background-position: center;
+}
+
+.salesforce-banner-overlay {
+  height: 100%;
+  background: rgba(11, 94, 215, 0.78);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 0 18px;
+}
+
+.salesforce-banner-overlay h1 {
+  margin: 0;
+  font-size: 42px;
+}
+
+.salesforce-banner-overlay p {
+  margin-top: 10px;
+  font-size: 18px;
+  max-width: 800px;
+}
+
+/* ✅ Intro */
+.sf-intro {
+  padding: 60px 0 35px;
+  text-align: center;
+}
+
+.sf-intro h2 {
+  color: #0b5ed7;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.sf-intro p {
+  max-width: 950px;
+  margin: auto;
+  line-height: 1.7;
+  color: #333;
+  font-size: 16px;
+}
+
+/* Common titles */
+.section-title {
+  text-align: center;
+  color: #0b5ed7;
+  font-size: 32px;
+  margin-bottom: 6px;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #444;
+  margin-bottom: 35px;
+}
+
+/* ✅ Offerings */
+.sf-offerings {
+  background: #f4f8ff;
+  padding: 60px 0;
+}
+
+.sf-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.sf-card {
+  background: white;
+  border-radius: 12px;
+  padding: 22px;
+  box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.08);
+  border-top: 4px solid #0b5ed7;
+  transition: 0.3s;
+}
+
+.sf-card:hover {
+  transform: translateY(-5px);
+}
+
+.sf-card h3 {
+  margin-top: 0;
+  color: #0b5ed7;
+}
+
+.sf-card p {
+  margin-bottom: 0;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* ✅ Why Choose */
+.sf-why {
+  padding: 60px 0;
+}
+
+.sf-why-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  align-items: start;
+}
+
+.sf-why-box h2 {
+  color: #0b5ed7;
+  margin-top: 0;
+}
+
+.sf-why-box ul {
+  padding-left: 18px;
+  margin-top: 10px;
+}
+
+.sf-why-box li {
+  padding: 8px 0;
+  color: #333;
+}
+
+/* CTA box */
+.sf-cta {
+  background: #0b5ed7;
+  color: white;
+  border-radius: 14px;
+  padding: 25px;
+}
+
+.sf-cta h3 {
+  margin-top: 0;
+}
+
+.sf-cta p {
+  line-height: 1.6;
+}
+
+.sf-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 12px 20px;
+  background: white;
+  color: #0b5ed7;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+/* ✅ Process */
+.sf-process {
+  padding: 60px 0;
+  background: white;
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-top: 25px;
+}
+
+.process-card {
+  background: #f7fbff;
+  padding: 18px;
+  border-radius: 12px;
+  border-left: 5px solid #0b5ed7;
+}
+
+.process-card h3 {
+  margin-top: 0;
+  color: #0b5ed7;
+  font-size: 16px;
+}
+
+.process-card p {
+  margin-bottom: 0;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ✅ Responsive */
+@media (max-width: 1000px) {
+  .sf-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sf-why-box {
+    grid-template-columns: 1fr;
+  }
+
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .salesforce-banner-overlay h1 {
+    font-size: 32px;
+  }
+}
